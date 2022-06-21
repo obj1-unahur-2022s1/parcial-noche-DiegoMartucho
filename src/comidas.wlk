@@ -72,12 +72,12 @@ class Parrillada inherits Plato
 
 	override method peso()
 		{
-		return cortesDeCarne.sum({ cortes => cortes.peso() })
+		return cortesDeCarne.sum({ corte => corte.peso() })
 		}
 	
 	method corteDeMasCalidad()
 		{
-		return cortesDeCarne.max({ cortes => cortes.calidad() })
+		return cortesDeCarne.max({ corte => corte.calidad() })
 		}
 	
 	override method valoracion()
