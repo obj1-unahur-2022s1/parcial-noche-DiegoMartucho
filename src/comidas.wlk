@@ -110,30 +110,3 @@ class CortesDeCarne
  const property calidad
  const property peso
 	}
-
-/* OTRA POSIBLE SOLUCION:
- * 
- object asado
-	{
-	method calidad() = 2
-	
-	method peso() = 800
-	}
-
-object vacio
-	{
-	method calidad() = 3
-	
-	method peso() = 1200
-	}
-	
-object matambreDeCerdo
-	{
-	method calidad() = 1
-	
-	method peso() = 1350
-	}
- */	
-	
-	
-	
