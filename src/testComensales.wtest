@@ -1,7 +1,10 @@
 import comidas.*
 import comensales.*
 describe "Test de Comensales" {
-	
+
+ const vege = new Vegetariano(peso = 68500)
+ 
+ 
 	method initialize() {
 		
 	}

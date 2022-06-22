@@ -30,23 +30,5 @@ object cocina
 		{
 		return comidasPreparadas.count({ comida => not comida.aptoVegetariano() })
 		}
-		
-/*
-	method elegirPlatoParaComensal(unComensal)
-		{
-		if(self.comidasAGusto(unComensal).size() >= 1)
-			{
-			return self.comidasAGusto(unComensal).anyOne()
 			
-			}
-		else 
-			{
-			self.error("Al comensal no le gusta ningun plato")
-			}
-		}
 	}
- */		
-	
-	
-	
-	

@@ -25,6 +25,10 @@ class Comensales
 
 class Vegetariano inherits Comensales
 	{
+ var peso	
+ 	
+	override method peso() = peso
+	
 	override method leAgrada(unaComida)
 		{
 		return unaComida.aptoVegetariano() and unaComida.valoracion() > 85
@@ -38,6 +42,10 @@ class Vegetariano inherits Comensales
 	
 class HambrePopular inherits Comensales
 	{
+ var peso
+ 		
+	override method peso() = peso
+	
 	override method leAgrada(unaComida)
 		{
 		return unaComida.esAbundante()
@@ -46,6 +54,10 @@ class HambrePopular inherits Comensales
 	
 class PaladarFino inherits Comensales
 	{
+ var peso
+ 		
+	override method peso() = peso
+	
 	override method leAgrada(unaComida)
 		{
 		return unaComida.peso().between(150, 300) and unaComida.valoracion() >= 100
