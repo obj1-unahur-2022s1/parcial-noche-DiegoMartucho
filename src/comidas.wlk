@@ -14,7 +14,7 @@ class Provoleta inherits Plato
  var peso
  const property tieneEspecias
  
-	override method valoracion() = if(self.esEspecial()) {return 120} else {return 80}
+	override method valoracion() = if(self.esEspecial()) {120} else {80}
  
 	override method aptoVegetariano() = not tieneEspecias
 		
@@ -42,15 +42,7 @@ class HamburguesaVegetariana inherits HamburguesaDeCarne
 	
 	override method valoracion()
 		{
-		return super() +
-		if (legumbreBase.size() * 2 <= 17)
-			{
-			return legumbreBase.size() * 2
-			}
-		else 
-			{
-			return 0
-			}
+		return super() + 17.min(legumbreBase.size() * 2)
 		}
 	}
 	
@@ -82,14 +74,10 @@ class Parrillada inherits Plato
 	
 	override method valoracion()
 		{
-		if(15 * self.corteDeMasCalidad().calidad() - cortesDeCarne.size() >= 0)
-			{
-			return 15 * self.corteDeMasCalidad().calidad() - cortesDeCarne.size()
-			}
-		else { return 0 }
-		}
+		return 0.max(15 * self.corteDeMasCalidad().calidad() - cortesDeCarne.size())
 	}
-	
+}
+
 object panIndustrial
 	{
 	method valor() = 0

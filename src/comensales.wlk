@@ -4,7 +4,7 @@ class Comensales
 	{
  const comidasIngeridas = []
  
-	method peso()
+	var property peso
 	
 	method leAgrada(unaComida)
 	
@@ -25,9 +25,8 @@ class Comensales
 
 class Vegetariano inherits Comensales
 	{
- var peso	
- 	
-	override method peso() = peso
+
+
 	
 	override method leAgrada(unaComida)
 		{
@@ -42,9 +41,7 @@ class Vegetariano inherits Comensales
 	
 class HambrePopular inherits Comensales
 	{
- var peso
- 		
-	override method peso() = peso
+
 	
 	override method leAgrada(unaComida)
 		{
@@ -54,9 +51,7 @@ class HambrePopular inherits Comensales
 	
 class PaladarFino inherits Comensales
 	{
- var peso
- 		
-	override method peso() = peso
+
 	
 	override method leAgrada(unaComida)
 		{
