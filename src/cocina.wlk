@@ -1,3 +1,9 @@
+/*
+En ```tieneBuenaOfertaVegetariana()``` convenia usar el valor absoluto abs() sobre una única resta, el lugar de hacer los dos cálculos de resta. 
+En ```platoFuerteCarnivoro()``` era conveniente usar la delegación en métodos auxiliares.
+Snif, Snif, falto el bonus
+ */
+
 import comidas.*
 import comensales.*
 
